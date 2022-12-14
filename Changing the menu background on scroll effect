@@ -1,0 +1,16 @@
+/* -- Changing the menu background on scroll effect -- */
+
+.elementor-sticky--effects {
+   background: #C6B994!important; /* change the background color here*/
+
+}
+
+.elementor-sticky--effects .sticky-menu-items ul li a /* change the menu text color here*/ {
+   color: #000!important;
+
+}
+
+.elementor-sticky--effects, .sticky-menu-items ul li a {
+  transition: .5s all ease-in-out;
+}
+
