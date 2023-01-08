@@ -1,0 +1,7 @@
+add_action( 'elementor/query/sorted_by_date', function( $query ) {
+	
+  $query->set( 'meta_key', 'sort_date' );
+  $query->set( 'orderby', 'meta_value_num' );
+  $query->set( 'order', 'ASC' );
+
+});
