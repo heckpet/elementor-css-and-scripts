@@ -1,0 +1,9 @@
+Titel 1: clamp(3.2rem, 1.4618rem + 3.6261vw, 4rem)
+Titel 2: clamp(2.6rem, 1.7309rem + 1.813vw, 3rem)
+Titel 3: clamp(2.2rem, 1.5482rem + 1.3598vw, 2.5rem)
+Titel 4: clamp(1.8rem, 1.3654rem + 0.9065vw, 2rem)
+Titel 5: clamp(1.6rem, 1.2741rem + 0.6799vw, 1.75rem)
+Titel 6: clamp(1.4rem, 1.1827rem + 0.4533vw, 1.5rem)
+Titel 7: clamp(1.2rem, 1.0914rem + 0.2266vw, 1.25rem)
+Body Small: REM 0,875
+Body Plus: REM 1,125
