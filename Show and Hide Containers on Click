@@ -1,0 +1,56 @@
+<script>
+//document.getElementById('slide1').style.display = 'block';
+document.getElementById('slide2').style.display = 'none';
+document.getElementById('slide3').style.display = 'none';
+document.getElementById('slide4').style.display = 'none';
+document.getElementById('slide5').style.display = 'none';
+document.getElementById('slide6').style.display = 'none';
+jQuery('.goto1').on('click tap', function(event){
+document.getElementById('slide1').style.display = 'block';
+document.getElementById('slide2').style.display = 'none';
+document.getElementById('slide3').style.display = 'none';
+document.getElementById('slide4').style.display = 'none';
+document.getElementById('slide5').style.display = 'none';
+document.getElementById('slide6').style.display = 'none';
+});
+jQuery('.goto2').on('click tap', function(event){
+document.getElementById('slide1').style.display = 'none';
+document.getElementById('slide2').style.display = 'block';
+document.getElementById('slide3').style.display = 'none';
+document.getElementById('slide4').style.display = 'none';
+document.getElementById('slide5').style.display = 'none';
+document.getElementById('slide6').style.display = 'none';
+});
+jQuery('.goto3').on('click tap', function(event){
+document.getElementById('slide1').style.display = 'none';
+document.getElementById('slide2').style.display = 'none';
+document.getElementById('slide3').style.display = 'block';
+document.getElementById('slide4').style.display = 'none';
+document.getElementById('slide5').style.display = 'none';
+document.getElementById('slide6').style.display = 'none';
+});
+jQuery('.goto4').on('click tap', function(event){
+document.getElementById('slide1').style.display = 'none';
+document.getElementById('slide2').style.display = 'none';
+document.getElementById('slide3').style.display = 'none';
+document.getElementById('slide4').style.display = 'block';
+document.getElementById('slide5').style.display = 'none';
+document.getElementById('slide6').style.display = 'none';
+});
+jQuery('.goto5').on('click tap', function(event){
+document.getElementById('slide1').style.display = 'none';
+document.getElementById('slide2').style.display = 'none';
+document.getElementById('slide3').style.display = 'none';
+document.getElementById('slide4').style.display = 'none';
+document.getElementById('slide5').style.display = 'block';
+document.getElementById('slide6').style.display = 'none';
+});
+jQuery('.goto6').on('click tap', function(event){
+document.getElementById('slide1').style.display = 'none';
+document.getElementById('slide2').style.display = 'none';
+document.getElementById('slide3').style.display = 'none';
+document.getElementById('slide4').style.display = 'none';
+document.getElementById('slide5').style.display = 'none';
+document.getElementById('slide6').style.display = 'block';
+});
+</script>
