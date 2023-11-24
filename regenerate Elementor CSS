@@ -1,0 +1,42 @@
+function regenerate_elementor_css_button() {
+    global $wp_admin_bar;
+    $args = array(
+        'id'    => 'regenerate_elementor_css',
+        'title' => 'Regenerate Elementor CSS',
+        'href'  => '#',
+        'meta'  => array(
+            'class' => 'regenerate-elementor-css',
+        ),
+    );
+    $wp_admin_bar->add_node( $args );
+}
+add_action( 'admin_bar_menu', 'regenerate_elementor_css_button', 999 );
+
+function regenerate_elementor_css_script() {
+    if ( is_admin() ) {
+        ?>
+        <script>
+        jQuery(document).ready(function($) {
+            $('#wp-admin-bar-regenerate_elementor_css a').click(function() {
+                $.post(
+                    ajaxurl,
+                    {
+                        action: 'elementor_css_regenerate'
+                    },
+                    function() {
+                        alert('Elementor CSS regenerated successfully.');
+                    }
+                );
+            });
+        });
+        </script>
+        <?php
+    }
+}
+add_action( 'admin_footer', 'regenerate_elementor_css_script' );
+
+function regenerate_elementor_css_action() {
+    \Elementor\Plugin::$instance->files_manager->clear_cache();
+    wp_die();
+}
+add_action( 'wp_ajax_elementor_css_regenerate', 'regenerate_elementor_css_action' );
