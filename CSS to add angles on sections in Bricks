@@ -1,0 +1,31 @@
+%root%{
+  position: relative;
+  --border-color: var(--action);
+  --border-width: 2px;
+  --border-style: solid;
+  --border-offset: -1em;
+}
+
+%root%::before, %root%::after{
+  content:'';
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  position: absolute;
+}
+
+
+%root%::before{
+ 
+  border-left: var(--border-width) var(--border-style) var(--border-color);
+  border-top: var(--border-width) var(--border-style) var(--border-color);
+  top: var(--border-offset);
+  left: var(--border-offset);
+}
+
+%root%::after{
+  border-right: var(--border-width) var(--border-style) var(--border-color);
+  border-bottom: var(--border-width) var(--border-style) var(--border-color);
+  bottom: var(--border-offset);
+  right: var(--border-offset);
+  }
